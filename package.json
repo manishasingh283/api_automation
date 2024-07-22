@@ -1,0 +1,41 @@
+{
+    "name": "api_atomation",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "jest",
+      "cypress": "cypress run --headless --browser electron configFile=production",
+      "cypress-headed": "cypress open"
+      },
+    "license": "ISC",
+    "dependencies": {
+      "@babel/core": "^7.22.6",
+      "@types/cypress-cucumber-preprocessor": "1.14.1",
+      "axios": "0.27.2", 
+      "cypress-cucumber-preprocessor": "4.3.1",
+      "dayjs": "1.11.9",
+      "faker": "4.1.0",
+      "node": "16.14.2",
+      "rest-api": "0.0.3",
+      "xlsx": "^0.18.5"
+    },
+    "devDependencies": {
+      "cypress": "^9.7.0",
+      "cypress-file-upload": "^4.0.6",
+      "cypress-mochawesome-reporter": "3.5.0",
+      "cypress-xpath": "1.6.0",
+      "jest": "^28.0.2",
+      "multiple-cucumber-html-reporter": "1.18.0"
+    },
+    "cypress-cucumber-preprocessor": {
+      "nonGlobalStepDefinitions": true,
+      "cucumberJson": {
+        "generate": true,
+        "outputFolder": "cypress/cucumber-json",
+        "filePrefix": "",
+        "fileSuffix": ".cucumber"
+      }
+    }
+  }
+  

@@ -1,0 +1,253 @@
+[
+  {
+    "description": "  Test petStore",
+    "keyword": "Feature",
+    "name": "petStore",
+    "line": 1,
+    "id": "petstore",
+    "tags": [],
+    "uri": "petStore.feature",
+    "elements": [
+      {
+        "id": "petstore;verify-if-user-is-able-to-add-valid-pet",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verify if user is able to add valid pet",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User fetches petName and id - Add Pet",
+            "result": {
+              "status": "passed",
+              "duration": 633000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User pass the required fields and hit the API - Add Pet",
+            "result": {
+              "status": "passed",
+              "duration": 2301000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Pet Should be added successfully- Add Pet",
+            "result": {
+              "status": "passed",
+              "duration": 68000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "petstore;verify-if-user-is-able-to-fetch-valid-pet(200-available)",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Verify if user is able to fetch valid pet(200 Available)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "User fetches id - Get Pet",
+            "result": {
+              "status": "passed",
+              "duration": 267000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User pass the required fields and hit the API - Get Pet",
+            "result": {
+              "status": "passed",
+              "duration": 316000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Pet Should be fetched successfully- Get Pet",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "petstore;verify-if-user-is-able-to-delete-pet-details",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Verify if user is able to DELETE pet details",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "User fetches id - Delete Pet",
+            "result": {
+              "status": "passed",
+              "duration": 132000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "User pass the required fields and hit the API - Delete Pet",
+            "result": {
+              "status": "passed",
+              "duration": 332000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Pet Should be deleted successfully- Delete Pet",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "petstore;verify-if-user-is-not-able-to-fetch-deleted-pet-details(404-error)",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "verify if user is not able to fetch deleted pet details(404 Error)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "User fetches id - Get Pet",
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "User pass the required fields and hit the API - Get Pet",
+            "result": {
+              "status": "passed",
+              "duration": 322000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Pet Should not be fetched successfully- Get Pet",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "petstore;to-verify-user-is-able-to-add-user",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "To verify user is able to add User",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "User fetches url - Add User",
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "User pass the required fields and hit the API - Add User",
+            "result": {
+              "status": "passed",
+              "duration": 306000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "User Should be added successfully- Add User",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "petstore;to-verify-if-the-user-is-not-able-to-add-invalid-pet-(500-error)",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "To verify if the user is not able to add invalid pet (500 error)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "User fetches invalid petName and id - Add Pet",
+            "result": {
+              "status": "passed",
+              "duration": 67000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "User pass the required fields and hit the API - Add Pet",
+            "result": {
+              "status": "passed",
+              "duration": 309000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "Pet Should not be added successfully- Add Pet",
+            "result": {
+              "status": "passed",
+              "duration": 55000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

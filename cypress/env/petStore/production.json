@@ -1,0 +1,7 @@
+{
+    "api_base_url": "https://petstore.swagger.io/v2",
+    "validPetName":"Automation Product-Production",
+    "invalidPetName":"shubhangi",
+    "configFile": "production"
+
+}

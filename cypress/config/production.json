@@ -1,0 +1,7 @@
+{
+  "env": {
+      "env_petStore": "cypress/env/petStore/production.json" 
+    
+      
+  }
+}
